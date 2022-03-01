@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th = "http://www.thymeleaf.org">
+	<head>
+		<meta charset = "UTF-8">
+		<title>Register User</title>
+		<limk href = "/css/style.css" th:href = "@{/css/style.css}"
+		rel = "stylesheet">
+	</head>
+	<body>
+		<header>
+			<h1>ユーザー登録画面</h1>
+		</header>
+		<form id = "registerForm" name = "registerForm" method = "post" action = "/ecsite/admin/user/registerUser">
+			<div>
+				<h3>ユーザーネーム</h3>
+				<input type = "text" id = "userName" name = "userName">
+			</div>
+			<div>
+				<h3>パスワード</h3>
+				<input type = "password" id = "password" name = "password">
+			</div>
+			<div>
+				<h3>フルネーム</h3>
+				<input type = "text" id = "fullName" name = "fullName">
+			</div>
+			<div>
+				<button type = "submit" id = "register">登録</button>
+			</div>
+		</form>
+	</body>
+</html>
